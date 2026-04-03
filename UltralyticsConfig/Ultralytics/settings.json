@@ -1,0 +1,21 @@
+{
+  "settings_version": "0.0.6",
+  "datasets_dir": "C:\\Users\\yummy\\Downloads\\github files\\PCB-Defect-Detector\\datasets",
+  "weights_dir": "weights",
+  "runs_dir": "runs",
+  "uuid": "3b5a4e80fa730d07527cc991ea8e642853cd35e7201360905d6605ee5e35b91f",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "hub": true,
+  "mlflow": true,
+  "neptune": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

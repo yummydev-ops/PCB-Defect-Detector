@@ -1,0 +1,49 @@
+{
+  "output_root": "C:\\Users\\yummy\\Downloads\\github files\\PCB-Defect-Detector\\data\\coco_master\\deeppcb_full",
+  "splits": {
+    "trainval": {
+      "images": 1000,
+      "annotations": 6873,
+      "categories": {
+        "1": "open",
+        "2": "short",
+        "3": "mousebite",
+        "4": "spur",
+        "5": "copper",
+        "6": "pin-hole"
+      }
+    },
+    "test": {
+      "images": 500,
+      "annotations": 3140,
+      "categories": {
+        "1": "open",
+        "2": "short",
+        "3": "mousebite",
+        "4": "spur",
+        "5": "copper",
+        "6": "pin-hole"
+      }
+    }
+  },
+  "issues": {
+    "trainval": {
+      "missing_image_refs": 0,
+      "missing_image_files": 0,
+      "invalid_category_ids": 0,
+      "malformed_bbox": 0,
+      "nonpositive_bbox": 0,
+      "out_of_bounds_bbox": 0,
+      "empty_images": 0
+    },
+    "test": {
+      "missing_image_refs": 0,
+      "missing_image_files": 0,
+      "invalid_category_ids": 0,
+      "malformed_bbox": 0,
+      "nonpositive_bbox": 0,
+      "out_of_bounds_bbox": 0,
+      "empty_images": 0
+    }
+  }
+}

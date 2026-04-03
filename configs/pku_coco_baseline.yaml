@@ -1,0 +1,34 @@
+# Baseline dataset config for the validated PKU Roboflow COCO export.
+# The source COCO JSON includes category id 0 = "pcb-defects" as a parent label,
+# but the actual annotations use the six defect classes listed below.
+
+dataset_name: pku_coco_baseline
+format: coco_detection
+dataset_root: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco
+
+splits:
+  train:
+    images_dir: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco/train
+    annotations: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco/train/_annotations.coco.json
+  val:
+    images_dir: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco/valid
+    annotations: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco/valid/_annotations.coco.json
+  test:
+    images_dir: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco/test
+    annotations: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco/test/_annotations.coco.json
+
+class_names:
+  - missing_hole
+  - mouse_bite
+  - open_circuit
+  - short
+  - spur
+  - spurious_copper
+
+source_category_ids:
+  missing_hole: 1
+  mouse_bite: 2
+  open_circuit: 3
+  short: 4
+  spur: 5
+  spurious_copper: 6

@@ -1,0 +1,30 @@
+# Baseline dataset config for the converted DeepPCB COCO export.
+# DeepPCB stays separate from PKU for now and should use its native labels.
+
+dataset_name: deeppcb_coco_baseline
+format: coco_detection
+dataset_root: data/coco_master/deeppcb_full
+
+splits:
+  trainval:
+    images_dir: data/coco_master/deeppcb_full/images/trainval
+    annotations: data/coco_master/deeppcb_full/annotations/instances_trainval.json
+  test:
+    images_dir: data/coco_master/deeppcb_full/images/test
+    annotations: data/coco_master/deeppcb_full/annotations/instances_test.json
+
+class_names:
+  - open
+  - short
+  - mousebite
+  - spur
+  - copper
+  - pin-hole
+
+source_category_ids:
+  open: 1
+  short: 2
+  mousebite: 3
+  spur: 4
+  copper: 5
+  pin-hole: 6

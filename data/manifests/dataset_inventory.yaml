@@ -1,0 +1,76 @@
+generated_for: objective_1_dataset_inventory
+
+datasets:
+  - name: pku_coco_baseline
+    source_path: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco
+    annotation_format: coco_json
+    label_geometry: boxes_only
+    masks_present: false
+    severity_labels_present: false
+    notes:
+      - Roboflow COCO export
+      - Category id 0 = pcb-defects is a parent label and not a training class
+    splits:
+      train:
+        images: 2910
+        annotations: 12187
+        annotation_file: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco/train/_annotations.coco.json
+      valid:
+        images: 276
+        annotations: 1171
+        annotation_file: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco/valid/_annotations.coco.json
+      test:
+        images: 140
+        annotations: 590
+        annotation_file: data/resources/PCB Defects Detection.v1-pku-market-pcb-ver1.coco/test/_annotations.coco.json
+    totals:
+      images: 3326
+      annotations: 13948
+    usable_classes:
+      - id: 1
+        name: missing_hole
+      - id: 2
+        name: mouse_bite
+      - id: 3
+        name: open_circuit
+      - id: 4
+        name: short
+      - id: 5
+        name: spur
+      - id: 6
+        name: spurious_copper
+
+  - name: deeppcb_coco_full
+    source_path: data/coco_master/deeppcb_full
+    annotation_format: coco_json
+    label_geometry: boxes_only
+    masks_present: false
+    severity_labels_present: false
+    notes:
+      - Converted from DeepPCB-master with scripts/convert_deeppcb_to_coco.py
+      - Preserves original DeepPCB category ids 1..6
+    splits:
+      trainval:
+        images: 1000
+        annotations: 6873
+        annotation_file: data/coco_master/deeppcb_full/annotations/instances_trainval.json
+      test:
+        images: 500
+        annotations: 3140
+        annotation_file: data/coco_master/deeppcb_full/annotations/instances_test.json
+    totals:
+      images: 1500
+      annotations: 10013
+    usable_classes:
+      - id: 1
+        name: open
+      - id: 2
+        name: short
+      - id: 3
+        name: mousebite
+      - id: 4
+        name: spur
+      - id: 5
+        name: copper
+      - id: 6
+        name: pin-hole

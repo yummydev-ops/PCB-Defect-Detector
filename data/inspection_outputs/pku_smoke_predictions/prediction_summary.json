@@ -1,0 +1,55 @@
+{
+  "images_checked": 8,
+  "images_with_predictions": 0,
+  "total_predictions": 0,
+  "predicted_class_counts": {
+    "missing_hole": 0,
+    "mouse_bite": 0,
+    "open_circuit": 0,
+    "short": 0,
+    "spur": 0,
+    "spurious_copper": 0
+  },
+  "per_image": [
+    {
+      "image": "image0.jpg",
+      "prediction_count": 0,
+      "predicted_classes": []
+    },
+    {
+      "image": "image1.jpg",
+      "prediction_count": 0,
+      "predicted_classes": []
+    },
+    {
+      "image": "image2.jpg",
+      "prediction_count": 0,
+      "predicted_classes": []
+    },
+    {
+      "image": "image3.jpg",
+      "prediction_count": 0,
+      "predicted_classes": []
+    },
+    {
+      "image": "image4.jpg",
+      "prediction_count": 0,
+      "predicted_classes": []
+    },
+    {
+      "image": "image5.jpg",
+      "prediction_count": 0,
+      "predicted_classes": []
+    },
+    {
+      "image": "image6.jpg",
+      "prediction_count": 0,
+      "predicted_classes": []
+    },
+    {
+      "image": "image7.jpg",
+      "prediction_count": 0,
+      "predicted_classes": []
+    }
+  ]
+}

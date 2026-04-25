@@ -29,7 +29,7 @@ DEFAULT_CONFIG = Path("configs/pku_coco_baseline.yaml")
 DEFAULT_WORKSPACE = Path("data/yolo_ready/pku_yolov8_baseline")
 DEFAULT_DATA_YAML = Path("configs/pku_yolov8_baseline_data.yaml")
 DEFAULT_PROJECT = Path("runs/pku_baseline")
-DEFAULT_NAME = "yolov8n_pku_baseline"
+DEFAULT_NAME = "yolov8n_pku_baseline_colab_long50"
 DEFAULT_MODEL = "yolov8n.pt"
 
 

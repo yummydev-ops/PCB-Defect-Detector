@@ -1,0 +1,11 @@
+path: data/yolo_ready/deeppcb_yolov8_baseline
+train: images/train
+val: images/val
+test: images/test
+names:
+- open
+- short
+- mousebite
+- spur
+- copper
+- pin-hole

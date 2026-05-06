@@ -1,0 +1,103 @@
+{
+  "images_checked": 8,
+  "images_with_predictions": 8,
+  "total_predictions": 40,
+  "predicted_class_counts": {
+    "open": 8,
+    "short": 4,
+    "mousebite": 7,
+    "spur": 9,
+    "copper": 6,
+    "pin-hole": 6
+  },
+  "per_image": [
+    {
+      "image": "image0.jpg",
+      "prediction_count": 5,
+      "predicted_classes": [
+        "mousebite",
+        "copper",
+        "pin-hole",
+        "spur",
+        "open"
+      ]
+    },
+    {
+      "image": "image1.jpg",
+      "prediction_count": 5,
+      "predicted_classes": [
+        "pin-hole",
+        "mousebite",
+        "copper",
+        "open",
+        "mousebite"
+      ]
+    },
+    {
+      "image": "image2.jpg",
+      "prediction_count": 4,
+      "predicted_classes": [
+        "spur",
+        "mousebite",
+        "pin-hole",
+        "open"
+      ]
+    },
+    {
+      "image": "image3.jpg",
+      "prediction_count": 5,
+      "predicted_classes": [
+        "pin-hole",
+        "mousebite",
+        "copper",
+        "spur",
+        "open"
+      ]
+    },
+    {
+      "image": "image4.jpg",
+      "prediction_count": 6,
+      "predicted_classes": [
+        "spur",
+        "pin-hole",
+        "copper",
+        "short",
+        "open",
+        "mousebite"
+      ]
+    },
+    {
+      "image": "image5.jpg",
+      "prediction_count": 5,
+      "predicted_classes": [
+        "pin-hole",
+        "short",
+        "open",
+        "spur",
+        "spur"
+      ]
+    },
+    {
+      "image": "image6.jpg",
+      "prediction_count": 5,
+      "predicted_classes": [
+        "copper",
+        "spur",
+        "open",
+        "mousebite",
+        "short"
+      ]
+    },
+    {
+      "image": "image7.jpg",
+      "prediction_count": 5,
+      "predicted_classes": [
+        "spur",
+        "open",
+        "short",
+        "copper",
+        "spur"
+      ]
+    }
+  ]
+}

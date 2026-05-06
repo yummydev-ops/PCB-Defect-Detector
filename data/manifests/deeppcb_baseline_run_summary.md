@@ -1,7 +1,6 @@
 # DeepPCB Baseline Run Summary
 
-This note is the placeholder summary for the first DeepPCB-only Colab baseline run.
-Fill in the metric fields after the run completes.
+This note records the completed first DeepPCB-only Colab baseline run.
 
 ## Run Identity
 
@@ -15,7 +14,7 @@ Fill in the metric fields after the run completes.
 - Notebook: `notebook/deeppcb_yolov8_baseline_colab.ipynb`
 - Data YAML: `configs/deeppcb_yolov8_baseline_data.yaml`
 
-## Planned Training Settings
+## Training Settings
 
 - Epochs: `10`
 - Image size: `640`
@@ -31,38 +30,43 @@ Fill in the metric fields after the run completes.
 - Validation split used in this workflow: `test`
 - Inference-check split used in this workflow: `test`
 
-## Expected Artifacts
+## Main Artifacts
 
 - Run folder: `runs/detect/runs/deeppcb_baseline/yolov8n_deeppcb_baseline_colab`
 - Best weights: `runs/detect/runs/deeppcb_baseline/yolov8n_deeppcb_baseline_colab/weights/best.pt`
 - Last weights: `runs/detect/runs/deeppcb_baseline/yolov8n_deeppcb_baseline_colab/weights/last.pt`
 - Metrics CSV: `runs/detect/runs/deeppcb_baseline/yolov8n_deeppcb_baseline_colab/results.csv`
 - Run args: `runs/detect/runs/deeppcb_baseline/yolov8n_deeppcb_baseline_colab/args.yaml`
-- Prediction images: `data/inspection_outputs/yolov8n_deeppcb_baseline_colab_predictions`
+- Prediction images: `not currently present in the synced repo outputs`
 
 ## Final Metrics
 
-- Final epoch: `TBD`
-- Train box loss: `TBD`
-- Train cls loss: `TBD`
-- Train dfl loss: `TBD`
-- Validation box loss: `TBD`
-- Validation cls loss: `TBD`
-- Validation dfl loss: `TBD`
-- Precision: `TBD`
-- Recall: `TBD`
-- mAP50: `TBD`
-- mAP50-95: `TBD`
+- Final epoch: `10`
+- Train box loss: `0.99683`
+- Train cls loss: `0.78994`
+- Train dfl loss: `0.95062`
+- Validation box loss: `0.89814`
+- Validation cls loss: `0.62905`
+- Validation dfl loss: `0.91828`
+- Precision: `0.91156`
+- Recall: `0.91519`
+- mAP50: `0.95582`
+- mAP50-95: `0.71398`
 
 ## Best Recorded Metrics
 
-- Best mAP50: `TBD`
-- Best mAP50 epoch: `TBD`
-- Best mAP50-95: `TBD`
-- Best mAP50-95 epoch: `TBD`
+- Best mAP50: `0.95582`
+- Best mAP50 epoch: `10`
+- Best mAP50-95: `0.71398`
+- Best mAP50-95 epoch: `10`
 
-## After The Colab Run Finishes
+## Practical Reading
 
-- Confirm that `best.pt`, `last.pt`, and `results.csv` exist in the run folder.
-- Open `results.csv` and record the final and best metrics above.
-- Check the prediction image folder to confirm the model is producing visible detections.
+- The DeepPCB-only Colab baseline completed successfully and saved the core training artifacts.
+- Detection quality is strong on this baseline setup.
+- The final metrics are far stronger than the PKU-only baseline runs.
+- Prediction images are not currently present in the synced repo outputs, so the qualitative inference check still needs to be saved separately if we want visual documentation.
+
+## Recommended Next Single Step
+
+- Run and save a short DeepPCB visual inference check using `best.pt` on a few test images so the baseline has both metric and qualitative evidence.

@@ -29,7 +29,6 @@ DEFAULT_DATA_YAML = Path("configs/pcb_v1i_yolov8_baseline_data.yaml")
 DEFAULT_PROJECT = Path("runs/pcb_v1i_baseline")
 DEFAULT_NAME = "yolov8n_pcb_v1i_baseline_colab"
 DEFAULT_MODEL = "yolov8n.pt"
-DEFAULT_PREDICT_OUTPUT_DIR = Path(f"data/inspection_outputs/{DEFAULT_NAME}_predictions")
 
 
 def parse_args() -> argparse.Namespace:
@@ -127,8 +126,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--predict-output-dir",
         type=Path,
-        default=DEFAULT_PREDICT_OUTPUT_DIR,
-        help="Folder name to use for saved prediction overlays.",
+        default=None,
+        help="Optional folder name to use for saved prediction overlays. Defaults to data/inspection_outputs/<run_name>_predictions.",
     )
     parser.add_argument(
         "--prepare-only",
@@ -136,6 +135,12 @@ def parse_args() -> argparse.Namespace:
         help="Only validate the config and build the YOLO workspace without training.",
     )
     return parser.parse_args()
+
+
+def resolve_predict_output_dir(args: argparse.Namespace) -> Path:
+    if args.predict_output_dir is not None:
+        return args.predict_output_dir
+    return Path(f"data/inspection_outputs/{args.name}_predictions")
 
 
 def prepare_runtime_dirs() -> None:
@@ -210,7 +215,7 @@ def run_post_training_check(args: argparse.Namespace, config: dict, weights_path
     if not sample_paths:
         raise RuntimeError(f"No test images found for prediction check in {test_images_dir}")
 
-    requested_output_dir = args.predict_output_dir.resolve()
+    requested_output_dir = resolve_predict_output_dir(args).resolve()
     requested_output_dir.parent.mkdir(parents=True, exist_ok=True)
 
     predictor = YOLO(str(weights_path))

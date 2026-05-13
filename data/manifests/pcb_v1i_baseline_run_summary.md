@@ -30,7 +30,7 @@ This note records the first YOLOv8 detection baseline workflow for the cleaned `
 - Default fraction: `1.0`
 - Default patience: `20`
 
-## Expected Artifacts
+## Main Artifacts
 
 - YOLO workspace: `data/yolo_ready/pcb_v1i_yolov8_baseline`
 - Run folder: `runs/detect/runs/pcb_v1i_baseline/yolov8n_pcb_v1i_baseline_colab`
@@ -38,18 +38,33 @@ This note records the first YOLOv8 detection baseline workflow for the cleaned `
 - Last weights: `runs/detect/runs/pcb_v1i_baseline/yolov8n_pcb_v1i_baseline_colab/weights/last.pt`
 - Metrics CSV: `runs/detect/runs/pcb_v1i_baseline/yolov8n_pcb_v1i_baseline_colab/results.csv`
 - Run args: `runs/detect/runs/pcb_v1i_baseline/yolov8n_pcb_v1i_baseline_colab/args.yaml`
-- Prediction images: `runs/detect/data/inspection_outputs/yolov8n_pcb_v1i_baseline_colab_predictions`
+- Prediction images: `data/inspection_outputs/yolov8n_pcb_v1i_baseline_colab_predictions`
 
 ## Final Metrics
 
-- Final epoch: `TBD`
-- Precision: `TBD`
-- Recall: `TBD`
-- mAP50: `TBD`
-- mAP50-95: `TBD`
+- Final epoch: `10`
+- Train box loss: `1.43074`
+- Train cls loss: `0.76408`
+- Train dfl loss: `1.35441`
+- Validation box loss: `1.44712`
+- Validation cls loss: `0.61272`
+- Validation dfl loss: `1.40394`
+- Precision: `0.97831`
+- Recall: `0.97537`
+- mAP50: `0.98915`
+- mAP50-95: `0.57440`
+
+## Best Recorded Metrics
+
+- Best mAP50: `0.98915`
+- Best mAP50 epoch: `10`
+- Best mAP50-95: `0.57440`
+- Best mAP50-95 epoch: `10`
 
 ## Practical Reading
 
 - This workflow keeps the cleaned PCB v1i dataset separate from PKU and DeepPCB.
 - It uses the existing train/valid/test split directly, without conversion.
-- The first goal is a clean detection-only reference baseline before any later training changes.
+- The first goal was a clean detection-only reference baseline before any later training changes.
+- The 10-epoch Colab baseline completed successfully and saved the expected training artifacts.
+- Detection performance is already strong on this cleaned dataset, especially compared with the older PKU baseline.

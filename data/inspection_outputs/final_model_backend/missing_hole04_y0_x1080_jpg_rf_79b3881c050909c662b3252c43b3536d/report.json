@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "image_reference": "C:/Users/yummy/Downloads/PCB-Defect-Detector/data/resources/PCB-Defect-Detection.v1i.coco/test/missing_hole04_y0_x1080_jpg.rf.79b3881c050909c662b3252c43b3536d.jpg",
+    "run_name": "yolov8n_deeppcb_to_pcb_v1i_transfer_colab",
+    "weights": "C:/Users/yummy/Downloads/PCB-Defect-Detector/runs/detect/runs/pcb_v1i_transfer/yolov8n_deeppcb_to_pcb_v1i_transfer_colab/weights/best.pt",
+    "tile_count": 1,
+    "used_tiling": false,
+    "detections": 1
+  },
+  "tiling": {
+    "used_tiling": false,
+    "tile_size": 640,
+    "tile_overlap": 128,
+    "tile_count": 1,
+    "merge_iou_threshold": 0.3,
+    "tiles": [
+      {
+        "tile_id": "tile_r00_c00",
+        "x_offset": 0,
+        "y_offset": 0,
+        "width": 640,
+        "height": 640
+      }
+    ]
+  },
+  "detections": [
+    {
+      "tile_id": "tile_r00_c00",
+      "class_id": 0,
+      "class_name": "missing_hole",
+      "confidence": 0.842,
+      "bbox_xyxy": [
+        536.87,
+        226.21,
+        597.96,
+        284.04
+      ],
+      "bbox_xywh": [
+        536.87,
+        226.21,
+        61.09,
+        57.83
+      ],
+      "class_prior": 0.7,
+      "relative_area": 0.008625,
+      "area_score": 0.8625,
+      "confidence_score": 0.842,
+      "severity_score": 0.7771,
+      "severity_band": "high"
+    }
+  ]
+}

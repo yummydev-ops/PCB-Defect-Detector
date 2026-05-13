@@ -1,0 +1,124 @@
+{
+  "run_name": "yolov8n_deeppcb_to_pcb_v1i_transfer_colab",
+  "weights": "C:/Users/yummy/Downloads/PCB-Defect-Detector/runs/detect/runs/pcb_v1i_transfer/yolov8n_deeppcb_to_pcb_v1i_transfer_colab/weights/best.pt",
+  "severity_range": [
+    0.0,
+    1.0
+  ],
+  "summary": {
+    "images_checked": 4,
+    "images_with_predictions": 3,
+    "total_predictions": 3,
+    "average_severity_score": 0.7986,
+    "predicted_class_counts": {
+      "missing_hole": 3,
+      "mouse_bite": 0,
+      "open_circuit": 0,
+      "short": 0,
+      "spur": 0,
+      "spurious_copper": 0
+    },
+    "per_image": [
+      {
+        "image": "image0.jpg",
+        "image_width": 640,
+        "image_height": 640,
+        "prediction_count": 1,
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "missing_hole",
+            "confidence": 0.842,
+            "bbox_xyxy": [
+              536.87,
+              226.21,
+              597.96,
+              284.04
+            ],
+            "bbox_xywh": [
+              536.87,
+              226.21,
+              61.09,
+              57.83
+            ],
+            "class_prior": 0.7,
+            "relative_area": 0.008625,
+            "area_score": 0.8625,
+            "confidence_score": 0.842,
+            "severity_score": 0.7771,
+            "severity_band": "high"
+          }
+        ]
+      },
+      {
+        "image": "image1.jpg",
+        "image_width": 640,
+        "image_height": 640,
+        "prediction_count": 0,
+        "detections": []
+      },
+      {
+        "image": "image2.jpg",
+        "image_width": 640,
+        "image_height": 640,
+        "prediction_count": 1,
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "missing_hole",
+            "confidence": 0.7996,
+            "bbox_xyxy": [
+              472.6,
+              560.3,
+              552.91,
+              637.51
+            ],
+            "bbox_xywh": [
+              472.6,
+              560.3,
+              80.31,
+              77.21
+            ],
+            "class_prior": 0.7,
+            "relative_area": 0.015138,
+            "area_score": 1.0,
+            "confidence_score": 0.7996,
+            "severity_score": 0.8099,
+            "severity_band": "high"
+          }
+        ]
+      },
+      {
+        "image": "image3.jpg",
+        "image_width": 640,
+        "image_height": 640,
+        "prediction_count": 1,
+        "detections": [
+          {
+            "class_id": 0,
+            "class_name": "missing_hole",
+            "confidence": 0.7938,
+            "bbox_xyxy": [
+              303.78,
+              202.99,
+              387.36,
+              280.04
+            ],
+            "bbox_xywh": [
+              303.78,
+              202.99,
+              83.57,
+              77.04
+            ],
+            "class_prior": 0.7,
+            "relative_area": 0.015719,
+            "area_score": 1.0,
+            "confidence_score": 0.7938,
+            "severity_score": 0.8088,
+            "severity_band": "high"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+image_reference,class_id,class_name,confidence,x1,y1,x2,y2,width,height,severity_score,severity_band,relative_area,tile_id
+C:/Users/yummy/Downloads/PCB-Defect-Detector/data/resources/PCB-Defect-Detection.v1i.coco/test/missing_hole04_y0_x1080_jpg.rf.79b3881c050909c662b3252c43b3536d.jpg,0,missing_hole,0.842,536.87,226.21,597.96,284.04,61.09,57.83,0.7771,high,0.008625,tile_r00_c00

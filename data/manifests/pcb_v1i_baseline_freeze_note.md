@@ -16,6 +16,8 @@
 
 ## Status
 
-- This cleaned-dataset YOLOv8n run is the **main detection baseline** for the project at this stage.
+- This cleaned-dataset YOLOv8n run remains the **frozen direct PCB v1i baseline** for comparison and reference.
+- It is **not** the selected final project backbone anymore.
+- The active final project model is `yolov8n_deeppcb_to_pcb_v1i_transfer_colab`, recorded in `data/manifests/final_project_model_selection.md`.
 - No further retraining is planned on this baseline for now.
 - The project should now move to the next **non-training** step using this run as the reference detector.

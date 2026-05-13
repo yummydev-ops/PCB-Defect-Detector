@@ -1,0 +1,4 @@
+image,class_id,class_name,confidence,x1,y1,x2,y2,width,height,relative_area,severity_score,severity_band
+image0.jpg,0,missing_hole,0.842,536.87,226.21,597.96,284.04,61.09,57.83,0.008625,0.7771,high
+image2.jpg,0,missing_hole,0.7996,472.6,560.3,552.91,637.51,80.31,77.21,0.015138,0.8099,high
+image3.jpg,0,missing_hole,0.7938,303.78,202.99,387.36,280.04,83.57,77.04,0.015719,0.8088,high

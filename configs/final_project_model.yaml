@@ -1,0 +1,12 @@
+role: final_project_backbone
+task: detect
+model_family: yolov8n.pt
+selected_run_name: yolov8n_deeppcb_to_pcb_v1i_transfer_colab
+selected_checkpoint: runs/detect/runs/pcb_v1i_transfer/yolov8n_deeppcb_to_pcb_v1i_transfer_colab/weights/best.pt
+selected_results_csv: runs/detect/runs/pcb_v1i_transfer/yolov8n_deeppcb_to_pcb_v1i_transfer_colab/results.csv
+selected_prediction_dir: data/inspection_outputs/yolov8n_deeppcb_to_pcb_v1i_transfer_colab_predictions
+source_checkpoint: runs/detect/runs/deeppcb_baseline/yolov8n_deeppcb_baseline_colab/weights/best.pt
+target_dataset: PCB-Defect-Detection.v1i.coco
+target_dataset_config: configs/pcb_v1i_coco_baseline.yaml
+training_style: sequential_fine_tuning
+status: frozen_for_downstream_use

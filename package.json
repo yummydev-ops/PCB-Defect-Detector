@@ -1,0 +1,31 @@
+{
+  "name": "pcb-defect-detector",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PCB defect detection workflow with YOLOv8 inference, severity scoring, and a Streamlit technician UI.",
+  "scripts": {
+    "app": "python -m streamlit run streamlit_app.py",
+    "backend": "python scripts/final_model_backend.py",
+    "figure": "python scripts/generate_training_outcomes_figure.py",
+    "check:python": "python -m compileall streamlit_app.py scripts",
+    "install:python": "python -m pip install streamlit PyYAML opencv-python matplotlib numpy pandas pillow torch torchvision ultralytics ultralytics-thop"
+  },
+  "engines": {
+    "node": ">=18",
+    "python": ">=3.10"
+  },
+  "x-pythonDependencies": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.2",
+    "opencv-python": "4.13.0.92",
+    "pandas": "2.3.3",
+    "pillow": "12.1.1",
+    "pyyaml": "6.0.3",
+    "streamlit": "1.54.0",
+    "torch": "2.10.0",
+    "torchvision": "0.25.0",
+    "ultralytics": "git+https://github.com/ultralytics/ultralytics.git@6cb78dd1a0d3cdeb0b846c8090cacb9cc8bb8e0d",
+    "ultralytics-thop": "2.0.18"
+  },
+  "dependencies": {}
+}

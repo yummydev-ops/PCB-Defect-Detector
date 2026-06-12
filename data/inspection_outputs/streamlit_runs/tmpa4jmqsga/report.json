@@ -1,0 +1,76 @@
+{
+  "summary": {
+    "image_reference": "C:/Users/yummy/Downloads/PCB-Defect-Detector/data/inspection_outputs/streamlit_uploads/tmpa4jmqsga.jpg",
+    "run_name": "yolov8n_deeppcb_to_pcb_v1i_transfer_colab",
+    "weights": "C:/Users/yummy/Downloads/PCB-Defect-Detector/runs/detect/runs/pcb_v1i_transfer/yolov8n_deeppcb_to_pcb_v1i_transfer_colab/weights/best.pt",
+    "tile_count": 1,
+    "used_tiling": false,
+    "detections": 2
+  },
+  "tiling": {
+    "used_tiling": false,
+    "tile_size": 640,
+    "tile_overlap": 128,
+    "tile_count": 1,
+    "merge_iou_threshold": 0.3,
+    "tiles": [
+      {
+        "tile_id": "tile_r00_c00",
+        "x_offset": 0,
+        "y_offset": 0,
+        "width": 640,
+        "height": 640
+      }
+    ]
+  },
+  "detections": [
+    {
+      "tile_id": "tile_r00_c00",
+      "class_id": 2,
+      "class_name": "open_circuit",
+      "confidence": 0.8236,
+      "bbox_xyxy": [
+        255.45,
+        115.77,
+        314.24,
+        175.67
+      ],
+      "bbox_xywh": [
+        255.45,
+        115.77,
+        58.79,
+        59.9
+      ],
+      "class_prior": 1.0,
+      "relative_area": 0.008597,
+      "area_score": 0.8597,
+      "confidence_score": 0.8236,
+      "severity_score": 0.9226,
+      "severity_band": "high"
+    },
+    {
+      "tile_id": "tile_r00_c00",
+      "class_id": 2,
+      "class_name": "open_circuit",
+      "confidence": 0.786,
+      "bbox_xyxy": [
+        487.01,
+        100.19,
+        537.13,
+        155.84
+      ],
+      "bbox_xywh": [
+        487.01,
+        100.19,
+        50.12,
+        55.65
+      ],
+      "class_prior": 1.0,
+      "relative_area": 0.00681,
+      "area_score": 0.681,
+      "confidence_score": 0.786,
+      "severity_score": 0.8615,
+      "severity_band": "high"
+    }
+  ]
+}

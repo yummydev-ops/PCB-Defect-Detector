@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "image_reference": "C:/Users/yummy/Downloads/PCB-Defect-Detector/data/inspection_outputs/streamlit_uploads/tmpha_xnk4y.jpg",
+    "run_name": "yolov8n_deeppcb_to_pcb_v1i_transfer_colab",
+    "weights": "C:/Users/yummy/Downloads/PCB-Defect-Detector/runs/detect/runs/pcb_v1i_transfer/yolov8n_deeppcb_to_pcb_v1i_transfer_colab/weights/best.pt",
+    "tile_count": 1,
+    "used_tiling": false,
+    "detections": 3
+  },
+  "tiling": {
+    "used_tiling": false,
+    "tile_size": 640,
+    "tile_overlap": 128,
+    "tile_count": 1,
+    "merge_iou_threshold": 0.3,
+    "tiles": [
+      {
+        "tile_id": "tile_r00_c00",
+        "x_offset": 0,
+        "y_offset": 0,
+        "width": 640,
+        "height": 640
+      }
+    ]
+  },
+  "detections": [
+    {
+      "tile_id": "tile_r00_c00",
+      "class_id": 0,
+      "class_name": "missing_hole",
+      "confidence": 0.518,
+      "bbox_xyxy": [
+        236.97,
+        420.64,
+        266.4,
+        450.39
+      ],
+      "bbox_xywh": [
+        236.97,
+        420.64,
+        29.43,
+        29.75
+      ],
+      "class_prior": 0.7,
+      "relative_area": 0.002138,
+      "area_score": 0.2138,
+      "confidence_score": 0.518,
+      "severity_score": 0.5177,
+      "severity_band": "medium"
+    },
+    {
+      "tile_id": "tile_r00_c00",
+      "class_id": 5,
+      "class_name": "spurious_copper",
+      "confidence": 0.35,
+      "bbox_xyxy": [
+        99.01,
+        368.67,
+        148.38,
+        390.66
+      ],
+      "bbox_xywh": [
+        99.01,
+        368.67,
+        49.37,
+        21.99
+      ],
+      "class_prior": 0.75,
+      "relative_area": 0.002651,
+      "area_score": 0.2651,
+      "confidence_score": 0.35,
+      "severity_score": 0.5245,
+      "severity_band": "medium"
+    },
+    {
+      "tile_id": "tile_r00_c00",
+      "class_id": 5,
+      "class_name": "spurious_copper",
+      "confidence": 0.33,
+      "bbox_xyxy": [
+        445.73,
+        117.9,
+        507.65,
+        136.96
+      ],
+      "bbox_xywh": [
+        445.73,
+        117.9,
+        61.92,
+        19.06
+      ],
+      "class_prior": 0.75,
+      "relative_area": 0.002881,
+      "area_score": 0.2881,
+      "confidence_score": 0.33,
+      "severity_score": 0.5274,
+      "severity_band": "medium"
+    }
+  ]
+}

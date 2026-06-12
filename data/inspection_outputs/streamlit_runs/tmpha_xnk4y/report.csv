@@ -1,0 +1,4 @@
+image_reference,class_id,class_name,confidence,x1,y1,x2,y2,width,height,severity_score,severity_band,relative_area,tile_id
+C:/Users/yummy/Downloads/PCB-Defect-Detector/data/inspection_outputs/streamlit_uploads/tmpha_xnk4y.jpg,0,missing_hole,0.518,236.97,420.64,266.4,450.39,29.43,29.75,0.5177,medium,0.002138,tile_r00_c00
+C:/Users/yummy/Downloads/PCB-Defect-Detector/data/inspection_outputs/streamlit_uploads/tmpha_xnk4y.jpg,5,spurious_copper,0.35,99.01,368.67,148.38,390.66,49.37,21.99,0.5245,medium,0.002651,tile_r00_c00
+C:/Users/yummy/Downloads/PCB-Defect-Detector/data/inspection_outputs/streamlit_uploads/tmpha_xnk4y.jpg,5,spurious_copper,0.33,445.73,117.9,507.65,136.96,61.92,19.06,0.5274,medium,0.002881,tile_r00_c00
